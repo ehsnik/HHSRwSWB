@@ -201,7 +201,12 @@ Across generated instances:
 
 ---
 
-## 9. Citation
+## 9. Contact
+For questions regarding the instances or implementation details, please contact the authors via their institutional affiliation. Right now, the corresponding author is Ehsan Nikbakhsh (reachable via nikbakhsh@modares.ac.ir)
+
+---
+
+## 10. Citation
 
 If you use these instances in your research, please cite:
 
@@ -217,8 +222,3 @@ Example BibTeX:
   year    = {2026},
   institution = {Faculty of Industrial and Systems Engineering, Tarbiat Modares University, Tehran, Iran}
 }
-
----
-
-## 10. Contact
-For questions regarding the instances or implementation details, please contact the authors via their institutional affiliation. Right now, the corresponding author is Ehsan Nikbakhsh (reachable via nikbakhsh@modares.ac.ir)
