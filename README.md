@@ -30,7 +30,7 @@ This study develops a mathematical model for the **Home Healthcare Scheduling an
 - Caregiver fatigue modeling
 - Time-dependent travel times
 
-To solve the problem efficiently, a **column generation-based heuristic algorithm** is proposed. The pricing subproblem (i.e., caregiver routing) is solved using a customized labeling algorithm incorporating several novel feasibility and dominance features.
+To solve the problem efficiently, a **column generation-based heuristic algorithm** is proposed. The pricing subproblem (i.e., caregiver routing) is solved using a customized labeling algorithm incorporating several feasibility and dominance features.
 
 Computational experiments show:
 - Up to **99% reduction in computational time**
@@ -53,7 +53,7 @@ Computational experiments show:
 └── README.md
 
 
-### Folder Description
+### 3. Folder Description
 
 - `instances/small/`  
   Small-scale synthetic instances used for validation and comparison.
@@ -66,110 +66,11 @@ Computational experiments show:
   
 ---
 
-## 3. Instance Characteristics
+## 4. Instance Descriptions
 
-Each instance represents a **daily planning horizon** and includes:
+Please see the Data_Description.pdf file in the root of the Instances folder.
 
-### Sets
-- Patients
-- Caregivers
-- Time periods (continuous or discretized)
-- Synchronized patient subset (requiring two caregivers)
-
-### Parameters (Typical)
-
-- Patient service duration
-- Travel time matrix (time-dependent)
-- Patient time windows
-- Patient priority levels
-- Gender compatibility constraints
-- Caregiver skill compatibility
-- Caregiver fatigue parameters
-- Maximum working time
-- Loyalty indicators (caregiver–patient familiarity)
-- Synchronization requirements
-
----
-
-## 4. Instance Naming Convention
-
-Instance files follow the general format:
-
-
-Where:
-
-- `N` = number of patients  
-- `C` = number of caregivers  
-- `S` = number of synchronized patients  
-- `TW` = time window structure type  
-- `ID` = scenario index  
-
-Example:
-
-**HHC_N50_C10_S8_TW2_ID3.dat**
-This instance includes:
-- 50 patients
-- 10 caregivers
-- 8 synchronized patients
-- Time window type 2
-- Scenario 3
-
-(Adjust naming details according to your actual file structure.)
-
----
-
-## 5. Instance Format
-
-Each instance file contains structured data including:
-
-### 1. General Parameters
-- Number of patients
-- Number of caregivers
-- Planning horizon length
-- Maximum working time
-
-### 2. Patient Data
-- Service duration
-- Time window start and end
-- Priority level
-- Gender requirement (if any)
-- Synchronization indicator
-- Loyalty preference
-
-### 3. Caregiver Data
-- Gender
-- Skill type
-- Fatigue parameters
-- Initial location
-
-### 4. Travel Data
-- Time-dependent travel time matrix  
-  (may be provided as multiple matrices corresponding to time intervals)
-
----
-
-## 6. Model Highlights
-
-The mathematical formulation integrates:
-
-- Routing constraints
-- Scheduling feasibility
-- Synchronization constraints for paired visits
-- Workload balancing term in objective function
-- Fatigue accumulation effects
-- Time-dependent travel time consistency
-- Patient satisfaction penalties
-
-The solution approach is based on:
-
-- Column Generation framework
-- Customized labeling algorithm for the pricing subproblem
-- Dominance rules for efficient state pruning
-- Feasibility-preserving route construction
-
----
-
-## 7. Usage
+## 5. Usage
 
 These instances can be used to:
 
@@ -178,12 +79,10 @@ These instances can be used to:
 - Compare column generation implementations
 - Study synchronization-constrained routing
 - Analyze workload balancing mechanisms
-
-If parsing scripts are provided in `src/`, see that folder for examples.
-
+  
 ---
 
-## 8. Computational Performance Summary
+## 6. Computational Performance Summary
 
 Across generated instances:
 
@@ -191,17 +90,17 @@ Across generated instances:
 - Average optimality gap:
   - 0.53% (small instances)
   - -2% (large instances)
-- Real case study:
+- Real case study (instance not provided here due to confidentiality restrictions):
   - 22.9% improvement over current operational plan
 
 ---
 
-## 9. Contact
+## 7. Contact
 For questions regarding the instances or implementation details, please contact the authors via their institutional affiliation. Right now, the corresponding author is Ehsan Nikbakhsh (reachable via nikbakhsh@modares.ac.ir)
 
 ---
 
-## 10. Citation
+## 8. Citation
 
 If you use these instances in your research, please cite:
 
