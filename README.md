@@ -50,8 +50,6 @@ Computational experiments show:
 
 │ ├── large/
 
-│ └── case_study/
-
 └── README.md
 
 
@@ -65,10 +63,7 @@ Computational experiments show:
 
 - `instances/large/`  
   Large-scale instances used to evaluate computational performance.
-
-- `instances/case_study/`  
-  Real-world instance derived from a home healthcare center (anonymized data).
-
+  
 ---
 
 ## 3. Instance Characteristics
