@@ -104,9 +104,7 @@ For questions regarding the instances or implementation details, please contact 
 
 If you use these instances in your research, please cite:
 
-Amini-Rarani, M., Nikbakhsh, E., Mahnam, M., & Zegordi, S.H. (2026).  
-*A column generation-based heuristic algorithm for home healthcare scheduling and routing with synchronization and workload balance.*  
-Faculty of Industrial and Systems Engineering, Tarbiat Modares University, Tehran, Iran.
+Amini-Rarani, M., Nikbakhsh, E., Mahnam, M., & Zegordi, S.H. (2026). *A column generation-based heuristic algorithm for home healthcare scheduling and routing with synchronization and workload balance.* Faculty of Industrial and Systems Engineering, Tarbiat Modares University, Tehran, Iran.
 
 Example BibTeX:
 ```bibtex
